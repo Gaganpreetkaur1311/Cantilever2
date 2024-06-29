@@ -1,0 +1,102 @@
+
+      /* Custom CSS */
+      body {
+        background-color: #222727;
+      }
+
+      .navbar {
+        margin-bottom: 20px;
+      }
+      .navbar-nav .nav-link {
+  color: #99b8d9 !important; /* Initial color of the nav items */
+  position: relative;
+  transition: color 0.3s, background-color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffffff !important; /* Color change on hover */
+  background-color: #3b4a4a; /* Background change on hover */
+  border-radius: 4px; /* Rounded corners on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffffff !important; /* Active link color */
+  background-color: #6c757d; /* Active link background */
+  border-radius: 4px; /* Rounded corners for active link */
+}
+      .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+        height: 350px; /* Set a fixed height */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card img {
+        height: 140px;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+      .card-body {
+        flex-grow: 1; /* Allow body to grow and fill the remaining space */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+
+      .card-title {
+        color: #5580ae;
+        font-size: 1.25rem;
+        margin-bottom:10px;
+  flex-grow: 0; 
+
+      }
+
+      .card-text {
+        color: #0a2949;
+        flex-grow: 1; /* Allow text to grow */
+  margin-bottom: 15px;
+      }
+
+      .container h1 {
+        font-size: 2rem;
+        color:white /* Changed to red */
+      }
+      .card-body a {
+        margin-top: auto; /* Push the link to the bottom */
+      }
+
+      .navbar-nav .nav-link {
+        color: #99b8d9 !important; /* Changed nav item color */
+      }
+      
+      .btn-outline-primary {
+        width: 150px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 15px;
+        }
+
+        .card {
+          margin-bottom: 10px;
+        }
+
+        .btn-outline-primary {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        .d-flex.justify-content-between {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    
